@@ -1,0 +1,199 @@
+/* General Reset & Styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    line-height: 1.75;
+    color: #1a1a1a;
+    background-color: #f4f6f8;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: #e8eaf0;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    color: #1b1b1b;
+}
+
+header .title {
+    font-size: 1.25rem;
+    color: #555;
+    font-style: italic;
+}
+
+/* Sections */
+.section {
+    margin-bottom: 35px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.section:hover {
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.section h2 {
+    font-size: 1.9rem;
+    border-bottom: 2px solid #4a90e2;
+    padding-bottom: 8px;
+    margin-bottom: 18px;
+    color: #2c3e50;
+}
+
+/* Jobs */
+.job h3 {
+    font-size: 1.35rem;
+    margin-bottom: 6px;
+    color: #34495e;
+}
+
+.job p em {
+    font-style: italic;
+    color: #7f8c8d;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 12px;
+}
+
+/* Skills Bar */
+.skills-bar {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 18px;
+    height: 22px;
+}
+
+.skills-bar span {
+    display: block;
+    height: 100%;
+    background-color: #4a90e2;
+    border-radius: 10px 0 0 10px;
+    transition: width 0.5s ease-in-out;
+}
+
+/* PDF Download */
+.pdf-download {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.pdf-download p {
+    margin-bottom: 12px;
+    color: #555;
+}
+
+.pdf-download button {
+    background-color: #4a90e2;
+    color: #fff;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.05rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.pdf-download button:hover {
+    background-color: #357ABD;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    header .title {
+        font-size: 1rem;
+    }
+
+    .section h2 {
+        font-size: 1.5rem;
+    }
+
+    .job h3 {
+        font-size: 1.15rem;
+    }
+
+    .skills-bar {
+        height: 18px;
+    }
+}
+/* Timeline Style */
+.timeline {
+    position: relative;
+    padding-left: 40px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #4a90e2;
+    opacity: 0.3;
+    border-radius: 1px;
+}
+
+.timeline-entry {
+    position: relative;
+    margin-bottom: 25px;
+    padding-left: 20px;
+}
+
+.timeline-entry::before {
+    content: '';
+    position: absolute;
+    left: -30px;
+    top: 6px;
+    width: 12px;
+    height: 12px;
+    background-color: #4a90e2;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 2px rgba(0,0,0,0.2);
+}
+
+/* Optional hover effect for entries */
+.timeline-entry:hover {
+    transform: translateX(3px);
+    transition: transform 0.3s ease;
+}
